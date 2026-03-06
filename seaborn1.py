@@ -22,4 +22,6 @@ sns.histplot(tips["total_bill"], kde=True)
 plt.show()
 sns.pairplot(tips)
 plt.show()
+sns.kdeplot(tips["total_bill"], shade=True)
+plt.show()
 
