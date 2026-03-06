@@ -6,6 +6,7 @@ tips = sns.load_dataset("tips")
 df=pd.DataFrame(tips)
 print(df.head())
 print(df.describe())
+print(df.info())
 # Create a scatter plot of total bill vs. tip
 sns.scatterplot(x="total_bill", y="tip", data=tips)
 # Show the plotplt.show()
