@@ -7,6 +7,7 @@ df=pd.DataFrame(tips)
 print(df.head())
 print(df.describe())
 print(df.info())
+print(df["day"].value_counts())
 # Create a scatter plot of total bill vs. tip
 sns.scatterplot(x="total_bill", y="tip", data=tips)
 # Show the plotplt.show()
