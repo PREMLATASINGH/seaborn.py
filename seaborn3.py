@@ -9,3 +9,4 @@ df=pd.DataFrame({
 print(df.head())
 print(df.describe())
 print(df.info())
+print(df["Region"].value_counts())
