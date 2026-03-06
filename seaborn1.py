@@ -24,4 +24,7 @@ sns.pairplot(tips)
 plt.show()
 sns.kdeplot(tips["total_bill"], shade=True)
 plt.show()
+corr=tips[["total_bill","tip","size"]].corr(tips)
+sns.heatmap(corr, annot=True, cmap="coolwarm")  
+plt.show()
 
