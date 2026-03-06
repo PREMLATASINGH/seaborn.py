@@ -7,3 +7,4 @@ df=pd.DataFrame({
     "Region": ["North", "South", "East", "West", "Central"] 
 })
 print(df.head())
+print(df.describe())
