@@ -7,3 +7,4 @@ df=pd.DataFrame({
     'profit': [20, 30, 50, 70, 90, 110]
 })
 print(df.head())
+print(df.describe())
