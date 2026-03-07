@@ -6,3 +6,4 @@ df=pd.DataFrame({
    "score": [10, 20, 30, 40, 50]
 })
 print(df.head())
+print(df.describe())
