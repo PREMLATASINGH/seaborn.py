@@ -8,3 +8,4 @@ df=pd.DataFrame({
 print(df.head())
 print(df.describe())
 print(df.info())
+print(df["hours"].value_counts())
