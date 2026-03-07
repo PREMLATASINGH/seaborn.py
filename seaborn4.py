@@ -6,3 +6,4 @@ df=pd.DataFrame({
     "Value": [10, 15, 7, 12, 20]
 })
 print(df.head())
+print(df.describe())
