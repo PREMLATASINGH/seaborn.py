@@ -35,3 +35,4 @@ df1=pd.DataFrame({
     "sales": [200, 220, 250, 270, 300]
 })
 print(df1.head())
+print(df1.describe())
