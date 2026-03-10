@@ -30,3 +30,8 @@ sns.heatmap(corr, annot=True, cmap="coolwarm")
 plt.title("Correlation Heatmap")
 plt.savefig('heatmap.png')
 plt.close()
+df1=pd.DataFrame({
+    "day": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "sales": [200, 220, 250, 270, 300]
+})
+print(df1.head())
