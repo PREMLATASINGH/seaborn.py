@@ -37,3 +37,4 @@ df1=pd.DataFrame({
 print(df1.head())
 print(df1.describe())
 print(df1.info())
+print(df1["day"].value_counts())
