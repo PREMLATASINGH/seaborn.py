@@ -50,3 +50,5 @@ df1 = pd.DataFrame({"category": ["A", "B", "C", "D", "E"], "value": [10, 20, 15,
 print(df1.head())
 df2 = pd.DataFrame({"category": ["A", "B", "C", "D", "E"], "value": [5, 15, 10, 20, 25]})
 print(df2.head())
+df_merged = pd.merge(df1, df2, on="category", suffixes=('_df1', '_df2'))
+print(df_merged.head())
