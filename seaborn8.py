@@ -56,3 +56,5 @@ df_merged["value_diff"] = df_merged["value_df1"] - df_merged["value_df2"]
 print(df_merged.head())
 df_joined = df1.set_index("category").join(df2.set_index("category"), lsuffix='_df1', rsuffix='_df2')
 print(df_joined.head())
+df3=pd.merge(df1, df2, on="category", how="outer", suffixes=('_df1', '_df2'))
+print(df3.head())
