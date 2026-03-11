@@ -6,3 +6,4 @@ df = pd.DataFrame({"sales": [200, 220, 250, 270, 300], "day": ["Monday", "Tuesda
 print(df.head())
 print(df.describe())
 print(df.info())
+print(df["day"].value_counts())
