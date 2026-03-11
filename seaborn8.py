@@ -35,3 +35,7 @@ plt.ylabel("Expenses")
 
 plt.savefig('lineplot.png')
 plt.close()
+plt.pie(df["sales"], labels=df["day"], autopct='%1.1f%%')
+plt.title("Pie Chart of Sales Distribution")
+plt.savefig('piechart.png')
+plt.close()
