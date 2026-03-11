@@ -52,3 +52,5 @@ df2 = pd.DataFrame({"category": ["A", "B", "C", "D", "E"], "value": [5, 15, 10, 
 print(df2.head())
 df_merged = pd.merge(df1, df2, on="category", suffixes=('_df1', '_df2'))
 print(df_merged.head())
+df_merged["value_diff"] = df_merged["value_df1"] - df_merged["value_df2"]
+print(df_merged.head())
