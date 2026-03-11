@@ -58,3 +58,5 @@ df_joined = df1.set_index("category").join(df2.set_index("category"), lsuffix='_
 print(df_joined.head())
 df3=pd.merge(df1, df2, on="category", how="outer", suffixes=('_df1', '_df2'))
 print(df3.head())
+df3=pd.merge(df1, df2, on="category", how="inner", suffixes=('_df1', '_df2'))
+print(df3.head())
